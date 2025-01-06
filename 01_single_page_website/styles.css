@@ -5,7 +5,7 @@ body {
     font-family: 'Zilla Slab', serif;
 }
 
-a{
+a {
     color: chocolate;
 }
 
@@ -34,7 +34,8 @@ h1 {
     display: flex;
     flex-direction: row;
     gap: 1em;
-    & a{
+
+    & a {
         color: white;
         text-decoration: none;
     }
@@ -43,7 +44,7 @@ h1 {
 
 #heroBanner {
     margin-top: 0;
-    background-image:  url(/images/beerTaps.png);
+    background-image: url(./images/beerTaps.png);
     height: 100vh;
     background-color: slategray;
     display: flex;
@@ -54,13 +55,15 @@ h1 {
     margin: auto;
     background-attachment: fixed;
     color: white;
+
     & button {
         background-color: black;
         color: white;
         font-size: larger;
         padding: 1.5em;
         border: solid 2px white;
-}}
+    }
+}
 
 
 #location {
@@ -106,21 +109,23 @@ iframe {
     margin-top: 1em;
 }
 
-.tapGallery{
+.tapGallery {
     display: grid;
     grid-template-columns: auto auto;
     gap: 2em;
     justify-content: space-evenly;
 }
 
-@media (max-width: 799px){
-    .tapGallery{
+@media (max-width: 799px) {
+    .tapGallery {
         grid-template-columns: auto;
     }
 }
 
-.item{
+.item {
     width: 30vw;
+    padding-left: 10%;
+    padding-right: 10%;
 }
 
 #team {
@@ -136,7 +141,7 @@ iframe {
     margin: 1em;
 }
 
-.gallery2Item{
+.gallery2Item {
     width: 33%;
     flex: 1;
 }

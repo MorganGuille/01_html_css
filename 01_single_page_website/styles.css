@@ -1,0 +1,143 @@
+body {
+    margin: 0;
+    padding: 0;
+
+    font-family: 'Zilla Slab', serif;
+}
+
+a{
+    color: chocolate;
+}
+
+header {
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    color: rgb(255, 255, 255);
+    padding-left: 1em;
+    padding-right: 1em;
+    font-size: large;
+}
+
+#navBar {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    & a{
+        color: white;
+        text-decoration: none;
+    }
+}
+
+ul {
+    text-decoration: none;
+    list-style-type: none;
+}
+
+#heroBanner {
+    margin-top: 0;
+    background-image:  url(/images/beerTaps.png);
+    height: 100vh;
+    background-color: slategray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin: auto;
+    background-attachment: fixed;
+    color: white;
+}
+
+& button {
+    background-color: black;
+    color: white;
+    font-size: larger;
+    padding: 1.5em;
+    border: solid 2px white;
+}
+
+
+h1 {
+    font-size: 2.5em;
+}
+
+
+#location {
+    text-align: center;
+
+    & p {
+        text-align: left;
+        font-size: 1.1em;
+    }
+}
+
+iframe {
+    margin-top: 1em;
+}
+
+#gallery {
+    text-align: center;
+    margin-top: 1em;
+}
+
+
+#imageGallery1 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 100%;
+    gap: 1em;
+    margin-top: 1em;
+}
+
+.galleryItem {
+    width: 550px;
+}
+
+.galleryItemWide {
+    width: 100vw;
+}
+
+#Beer {
+    text-align: center;
+    margin-top: 1em;
+}
+
+.tapGallery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    & article {
+        width: 50%;
+    }
+}
+
+#team {
+    text-align: center;
+    margin-top: 1em;
+}
+
+#imagegallery2 {
+    margin-top: 1em;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    color: white;
+    align-items: center;
+    font-size: large;
+
+    & p {
+        margin: .5em;
+    }
+}

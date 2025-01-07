@@ -35,6 +35,7 @@ hr {
     margin-top: 0.2em;
 }
 
+
 /* Header Styles */
 
 
@@ -78,7 +79,7 @@ nav {
 
 /* Main Content Styles */
 
-#gridContainer {
+#gridContainer2clm {
     display: grid;
     grid-template-columns: 70% 30%;
 }
@@ -101,16 +102,18 @@ nav {
 
 }
 
-.gridRight {
-    width: auto;
-
-}
-
 .gridLeft {
     width: auto;
     padding: 0.5em;
     margin-top: 1em;
 }
+
+.gridRight {
+    width: auto;
+
+}
+
+
 
 .smallP {
     font-size: 0.8rem;
@@ -126,12 +129,38 @@ nav {
     padding-left: 1.5em;
 }
 
+#gridContainer3clm {
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+}
+
+#grid1{
+    padding: 1em 0.5em 1em 0;
+    & div{
+        padding: 1em 0 1em 0;
+    }
+}
+
+#grid2{
+    padding: 1em 0.5em 1em 0;
+    & div{
+        padding: 1.5em 0 1em 0;
+    }
+}
+
+#grid3{
+    padding: 1em 0.5em 1em 0;
+    & article{
+        padding: 0.5em 0 0.5em 0;
+    }
+}
+
 
 /* Footer Styles */
 
-footer{
+footer {
     margin-top: 3em;
-    margin-bottom: 2em ;
+    margin-bottom: 2em;
 }
 
 #footerLogo {
@@ -144,18 +173,32 @@ footer{
     display: flex;
     justify-content: space-between;
     gap: 1em;
-    
+
 
     & p {
         padding-top: 0.5em;
     }
-    & hr{
+
+    & hr {
         padding: 0;
         margin: 0;
     }
 }
 
-.centerElement{
+.centerElement {
     text-align: center;
     padding: 1em 0 1em 0;
 }
+
+
+@media screen and (max-width: 600px) {
+    #gridContainer2clm {
+        display: grid;
+        grid-template-columns: auto;
+    }
+    #gridContainer3clm {
+        display: grid;
+        grid-template-columns: auto;
+    }
+
+  }

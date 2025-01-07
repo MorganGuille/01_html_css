@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(24, 24, 24);
+    opacity: 0.5;
+    padding: 0.5em 1em 0.5em 1em;
+    
+}
+
+body{
+    background-image: url(./images/orange_lines_hd-1920x1080.jpg);
+}
+
+button{
+    padding: 0.5em;
+}
+
+input[type=search]{
+    padding: 0.5em;
+}
+
+#companyInfo{
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+
+    & div{
+    display: flex;
+    gap: 1em;
+    color: whitesmoke;
+    align-items: center;}
+}
+
+#mainContainer{
+    display: flex;
+    justify-content: space-evenly;
+    overflow: scroll;
+}

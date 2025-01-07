@@ -10,11 +10,14 @@ header{
     background-color: rgb(24, 24, 24);
     opacity: 0.5;
     padding: 0.5em 1em 0.5em 1em;
+    height: 6vh;
     
 }
 
 body{
     background-image: url(./images/orange_lines_hd-1920x1080.jpg);
+    overflow: visible;
+    
 }
 
 button{
@@ -39,6 +42,14 @@ input[type=search]{
 
 #mainContainer{
     display: flex;
-    justify-content: space-evenly;
-    overflow: scroll;
+
+    overflow-x:scroll;
+    height: 85vh;
+    width: auto;
+}
+
+.container{
+    width: 500px;
+    border: solid black 2px;
+    overflow-y: scroll;
 }

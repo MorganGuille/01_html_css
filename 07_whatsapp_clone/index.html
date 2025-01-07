@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>WhatsApp</title>
+</head>
+
+<body>
+
+    <div id="window">
+        <div id="header" class="flex apart">
+            <p>WhatsApp Beta</p>
+            <div>
+                <a href=""><img src="./images/window-minimize.png" width="20px" height="20px"></a>
+                <a href=""><img src="./images/window-maximize.png" width="20px" height="20px"></a>
+                <a href=""><img src="./images/letter-x.png" width="20px" height="20px"></a>
+            </div>
+        </div>
+        <!-- div to contain and grid -->
+        <div id="container">
+            <div id="leftPanel">
+                <div id="chatHeader">
+                    <h2>Chats</h2>
+                    <div>
+                        <a href=""><img src="./images/plus.png" width="20px" height="20px"></a>
+                        <a href=""><img src="./images/settings-cog.png" width="20px" height="20px"></a>
+                    </div>
+                </div>
+                <div id="chatSearch">
+
+                    <input type="text" placeholder="Search or start new chat">
+
+
+                </div>
+
+                <!-- chats below here -->
+                <div class="chatBox selected">
+                    <img src="./images/chatHeads/1.png" width="50px" height="50px">
+                    <div class="textBox">
+                        <h3>Morgan Guille</h3>
+                        <h4>Lorem ipsum dolor sit, amet consectetur.</h4>
+                    </div>
+                    <div>
+                        <p>5:15pm</p>
+                        <p class="num">1</p>
+                    </div>
+                </div>
+
+                <div class="chatBox">
+                    <img src="./images/chatHeads/2.png" width="50px" height="50px">
+                    <div class="textBox">
+                        <h3>John Smith</h3>
+                        <h4>Lorem ipsum dolor sit, amet consectetur.</h4>
+                    </div>
+                    <div>
+                        <p>9:15am</p>
+                        <p class="num">4</p>
+                    </div>
+                </div>
+
+                <div class="chatBox">
+                    <img src="./images/chatHeads/3.png" width="50px" height="50px">
+                    <div class="textBox">
+                        <h3>Jane Doe</h3>
+                        <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum quaerat facere voluptatum
+                            nulla fuga deleniti inventore beatae voluptatibus ad earum eius quisquam voluptate, ducimus
+                            repellat porro impedit? Delectus, animi possimus!</h4>
+                    </div>
+                    <div>
+                        <p>7:15pm</p>
+                        <p class="num">10</p>
+                    </div>
+                </div>
+
+                <div class="chatBox">
+                    <img src="./images/chatHeads/4.png" width="50px" height="50px">
+                    <div class="textBox">
+                        <h3>Dorathy Jane</h3>
+                        <h4>Lorem ipsum dolor sit, amet consectetur.</h4>
+                    </div>
+                    <div>
+                        <p>6pm</p>
+                        <p class="num empty"></p>
+                    </div>
+                </div>
+
+                <!-- chats above here -->
+
+            </div>
+            <div id="rightPanel">
+                <div>
+                    <h2>Morgan Guille</h2>
+                    <p>online</p>
+                </div>
+                <div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

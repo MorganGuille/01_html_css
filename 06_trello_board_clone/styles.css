@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(24, 24, 24);
+    opacity: 0.5;
+    padding: 0.5em 1em 0.5em 1em;
+    height: 6vh;
+    
+}
+
+body{
+    background-image: url(./images/orange_lines_hd-1920x1080.jpg);
+    overflow: visible;
+    font-family: 'Courier New', Courier, monospace;
+    
+}
+
+button{
+    padding: 0.5em;
+    border: solid 0px;
+    border-radius: 5px;
+    background-color: white;
+
+}
+
+button:hover{
+    background-color: rgb(152, 152, 152);
+
+}
+
+input[type=search]{
+    padding: 0.5em;
+}
+
+h2{
+    font-size: large;
+}
+
+#companyInfo{
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+
+    & div{
+    display: flex;
+    gap: 1em;
+    color: whitesmoke;
+    align-items: center;}
+}
+
+#mainContainer{
+    display: flex;
+    overflow-x:scroll;
+    height: 85vh;
+    width: auto;
+    margin: 0 1em 0 1em;
+    gap: 1em;
+}
+
+
+.container{
+    box-shadow: 10px 10px 5px rgb(139, 139, 139);
+    min-width: 20vw;
+    background-color: hsla(208, 13%, 75%, 0.76);
+    border-radius: 10px;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 0.5em 0 0.5em;
+    
+}
+.innerContainer{
+    
+    margin: 1em;
+    width: 95%;
+    height: 95%;
+    overflow-y: scroll;
+}
+
+.flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 90%;
+    margin-top: 0.5em;
+}
+
+.item{
+    background-color: rgba(255, 255, 255, 0.824);
+    border-radius: 10px;
+    padding: 0.5em 0.5em 1em 1.5em;
+    margin-top: 0;
+    margin-bottom: 1em;
+    margin-right: 0.5em ;
+    margin-left: 0.5em;
+}
+
+.innerContainer::-webkit-scrollbar{
+  display: none;
+}
+
+.tagContainer{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5em;
+    margin-bottom: 0.5em;
+
+}
+
+.tag{
+    width: 2em;
+    height: 1em;
+    background-color: aqua;
+    border-radius: 5px;
+
+}
+
+.redTag{
+    background-color: lightcoral;
+}
+
+.greenTag{
+    background-color: aquamarine;
+}
+
+.blueTag{
+    background-color: lightblue;
+}
+

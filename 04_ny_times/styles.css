@@ -1,95 +1,161 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
-img{
+img {
     max-width: 100%;
 }
 
-a{
+a {
     text-decoration: none;
     color: inherit;
 }
 
-h2{
+h2 {
+    font-size: 2em;
+    font-weight: 400;
+}
+
+h3 {
     font-size: 1.2em;
 }
 
-body{
+body {
     padding-left: 12%;
     padding-right: 12%;
 }
 
-* > #topBar{
+figcaption {
+    float: right;
+    font-size: small;
+}
+
+hr {
+    margin-top: 0.2em;
+}
+
+/* Header Styles */
+
+
+*>#topBar {
     display: flex;
     justify-content: space-around;
     align-items: center;
     margin-top: 0.5em;
 }
 
-#source{
+#source {
     display: flex;
     gap: 1em;
 }
 
-#logo{
+#logo {
     width: 30em;
     max-width: 30vw;
 }
 
-* > #middleBar{
+*>#middleBar {
     display: flex;
     justify-content: space-around;
     align-items: center;
     margin-top: 1.5em;
 }
 
-nav{
+nav {
     display: flex;
     justify-content: center;
     gap: 1.2em;
 }
 
-hr{
-    margin-top: 0.2em;
-}
-
-#bottomBar{
+#bottomBar {
     display: flex;
     justify-content: center;
-    margin-top: 0.5em ;
+    margin-top: 0.5em;
     margin-bottom: 0.5em;
     gap: 1em;
 }
 
-#gridContainer{
+/* Main Content Styles */
+
+#gridContainer {
     display: grid;
-    grid-template-columns: 60% 40%;
+    grid-template-columns: 70% 30%;
 }
 
-.left{
+.left {
     display: grid;
     grid-template-columns: 30% 70%;
+    padding: 1em;
 
 
     /* debug color */
     /* background-color: rgba(112, 128, 144, 0.4); */
 }
 
-.right{
-    background-color: rgba(127, 255, 212, 0.4);
+.right {
+    /* debug color */
+    /* background-color: rgba(127, 255, 212, 0.4); */
+    padding: 1em;
+
 
 }
 
-.gridRight{
+.gridRight {
     width: auto;
 
-
 }
 
-.gridLeft{
+.gridLeft {
     width: auto;
     padding: 0.5em;
     margin-top: 1em;
+}
+
+.smallP {
+    font-size: 0.8rem;
+}
+
+.redFont {
+    color: red;
+}
+
+.flexContainer {
+    display: flex;
+    gap: 1em;
+    padding-left: 1.5em;
+}
+
+
+/* Footer Styles */
+
+footer{
+    margin-top: 3em;
+    margin-bottom: 2em ;
+}
+
+#footerLogo {
+    width: 15em;
+    padding-bottom: 1em;
+    padding-top: 1em;
+}
+
+#footer {
+    display: flex;
+    justify-content: space-between;
+    gap: 1em;
+    
+
+    & p {
+        padding-top: 0.5em;
+    }
+    & hr{
+        padding: 0;
+        margin: 0;
+    }
+}
+
+.centerElement{
+    text-align: center;
+    padding: 1em 0 1em 0;
 }

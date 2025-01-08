@@ -28,8 +28,13 @@ h4 {
     }
 }
 
+.grey{
+    color: slategray;
+}
+
 #header {
     height: 10%;
+    
 }
 
 
@@ -43,6 +48,7 @@ h4 {
     /* debug color */
     /* background-color: aquamarine; */
     padding: 1em;
+    overflow-y: auto;
 }
 
 #chatHeader {
@@ -76,8 +82,9 @@ input[type=text] {
 
 #rightPanel {
     height: 100vh;
+    background-image: url(./images/background.jpg);
     background-color: beige;
-    padding: 1em;
+       
 }
 
 .chatBox {
@@ -118,4 +125,121 @@ input[type=text] {
 .selected{
     background-color: rgba(135, 206, 250, 0.705);
     border-radius: 5px;
+}
+
+
+
+/* Right panel styles */
+
+#rightPanelHead{
+    display: flex;
+    justify-content: space-between;
+    background-color: whitesmoke;
+    padding: 1em 1em 1em 2em;
+}
+
+#rightPanelContact{
+    display: flex;
+    justify-content: space-evenly;
+    width: 30%;
+    height: 26px;
+}
+
+ /* chat panel head above here */
+
+#chatTextArea{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 78%;
+    overflow-y: auto;
+    padding-bottom: 1em;
+}
+
+.chatTextBoxSender{
+    align-self: end;
+    width: fit-content;
+    height: fit-content;
+    max-width: 70%;
+    min-width: 40%;
+    background-color: rgba(177, 240, 152, 0.774);
+    border-radius: 10px;
+    margin-top: 1em ;
+    margin-right: 1em;
+
+    & img {
+        display: block;
+    }
+
+}
+
+.chatText{
+    margin: 1em 1em 0.2em 1em ;
+}
+
+.chatTextTime{
+    float: right;
+    margin: 0;
+    margin-bottom: 0.5em;
+    margin-right: 1em;
+    padding: 0;
+}
+
+.chatTextBoxReceiver{
+    align-self: start;
+    width: fit-content;
+    height: fit-content;
+    max-width: 70%;
+    min-width: 40%;
+    background-color: rgba(244, 244, 243, 0.888);
+    border-radius: 10px;
+    margin-top: 1em ;
+    margin-left: 1em;
+
+    & img {
+        display: block;
+    }
+
+}
+
+/* chat area footer below here */
+
+#rightPanelFoot{
+    position:absolute;
+    bottom: 0;
+    width: 68%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 0.5em ;
+    padding-left: 1em;
+    padding-right: 1em;
+    height: fit-content;
+    background-color: whitesmoke;
+
+    & input[type=text]{
+        width: 80%;
+        height: 1.5em;
+    }
+
+}
+
+
+
+/* media resizing */
+
+@media all and (max-width:1000px){
+    #leftPanel {
+        display: none;
+    }
+    #rightPanel {
+        width: 100vw
+           
+    }
+    #rightPanelFoot{
+
+        width: 98%;
+
+    }
+
 }
